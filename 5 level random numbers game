@@ -1,0 +1,99 @@
+print("This is a 5 levels random number guessing game. \n")
+print("Have fun playing! \n")
+level = float(input("Enter level: \n"))
+if level > 5:
+    print('Wrong input!')
+    print("Enter a number between 1 to 10 ")
+
+elif level == 1:
+    print("You have selected level 1")
+    guess= float(input("Take a guess between 1 to 10: \n"))
+    import random
+    random_1 = random.randrange(1,10)
+    if guess == random_1:
+        print('You won!')
+    elif guess > 10:
+        print('Wrong input!')
+        print("Enter a number between 1 to 10")
+    elif guess < 1:
+        print('Wrong input!')
+        print("Enter a number between 1 to 10")   
+    else: 
+        print('You lose!')
+        print("Try again")
+    print(f"The correct number is {random_1}")
+
+elif level == 2:
+    print("You have selected level 2")
+    guess= float(input("Take a guess between 1 to 20: \n"))
+    import random
+    random_2 = random.randrange(1,20)
+    if guess == random_2:
+        print('You won!')
+    elif guess > 20:
+        print('Wrong input!')
+        print("Enter a number between 1 to 20")   
+    elif guess < 1:
+        print('Wrong input!')
+        print("Enter a number between 1 to 20")    
+    else: 
+        print('You lose!')
+        print("Try again")
+    print(f"The correct number is {random_2}")
+
+elif level == 3:
+    print("You have selected level 3")
+    guess= float(input("Take a guess between 1 to 30: \n"))
+    import random
+    random_3 = random.randrange(1,30)
+    if guess == random_3:
+        print('You won!')
+    elif guess > 30:
+        print('Wrong input!')
+        print("Enter a number between 1 to 30!")
+    elif guess < 1:
+        print('Wrong input') 
+        print("Enter a number between 1 to 30!")   
+    else: 
+        print('You lose!')
+        print("Try again")
+    print(f"The correct number is {random_3}")
+
+elif level == 4:
+    print("You have selected level 4")
+    guess= float(input("Take a guess between 1 to 40: \n"))
+    import random
+    random_4 = random.randrange(1,40)
+    if guess == random_4:
+        print('You won!')
+    elif guess > 40:
+        print('Wrong input!')
+        print("Enter a number between 1 to 40!")
+    elif guess < 1:
+        print('Wrong input!')
+        print("Enter a number between 1 to 40!")   
+    else: 
+        print('You lose!')
+        print("Try again")
+    print(f"The correct number is {random_4}")
+    
+elif level == 5:
+    print("You have selected level 5")
+    guess= float(input("Take a guess between 1 to 50: \n"))
+    import random
+    random_5 = random.randrange(1,50)
+    if guess == random_5:
+        print('You won!')
+    elif guess > 50:
+        print('Wrong input!')
+        print("Enter a number between 1 to 50!")
+    elif guess < 1:
+        print('Wrong input!')
+        print("Enter a number between 1 to 50!")   
+    else: 
+        print('You lose!')
+        print("Try again")
+    print(f"The correct number is {random_5}")
+
+
+input() 
